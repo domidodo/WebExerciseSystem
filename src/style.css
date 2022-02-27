@@ -1,0 +1,112 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif; 
+}
+
+h1{
+  color: #111; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-align: center; 
+}
+
+.right {
+  float: right;
+}
+
+.shadow {
+  box-shadow: 0 0 1em grey;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
+  -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  padding:10px;
+}
+
+#logo{
+  margin-top:10px;
+  text-align: center; 
+}
+
+#training {
+  min-height:300px;
+  width:800px;
+  margin: auto;
+}
+
+#training li {
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+#training #buttons button{
+  margin: 5px;
+  width:90px;
+}
+
+#training #buttons progress{
+  margin: 5px;
+  width: 100%;
+}
+
+.correctCount,
+.wrongCount{
+	float:right;
+	padding:5px;
+	margin-left: 2px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.correctCount{
+	border-color:green;
+}
+.wrongCount{
+	border-color:red;
+}
+
+#training .highlight{
+  font-style:italic;
+  text-indent:1.5em;
+  font-family: monospace;
+  background-color: #E0EEEE;
+}
+
+#training img{
+  width: 200px;
+  float: right;
+  padding:15px;
+}
+
+#training input {
+  float: left;
+}
+
+#training .check {
+  float: left;
+}
+
+#training label {
+  margin-left: 40px;
+  display: block;
+  margin-bottom:5px;
+}
+
+
+#overview .course{
+  height:200px;
+  width:200px;
+  margin:15px;
+  float: left;
+  cursor: pointer;
+}
+
+#overview .course:hover{
+  box-shadow: 0 0 1em black;
+}

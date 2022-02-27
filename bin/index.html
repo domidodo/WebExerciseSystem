@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+	<head>
+		<title> </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAASlQTFRFAJfRAJfRAJfRAJfRAJfRAJfRAJfRAJfRAJfRAJfRAJfRAJbQApfRAJXQCJrSO6/cktLrk9PrPbDcB5rSAJbREp7UWLvhsN/x7vj8////rt7wVrrhAZbRHqPWccXlxuj1+fz++Pz+H6TXBZnSNq3bic/q1+/4/f7/2e/4is/qNKzaLqrZptvv7/j8pNrvLanZGqHWa8Pkweb09/z+v+XzacLkGaHVD53UTrffo9nu6/f7ntjudcfmKqjYOa7b1O331e73Oq/cS7TeMavaEJzTyun1yen1D5zTX77iP7HcIqXX4/T6/v7/9vv95/X76Pb75fT6JabYhc3pW7zhGaHWjdHqYr/jQbHdKKfYKajYQbLdYb/jh87pjdHrG6LWmNXsbcTlQrLdL6raLR2KhQAAAAp0Uk5TBmrba/Bl2dj+ZDlTC40AAAABYktHRBnsbrWIAAAACXBIWXMAAGj9AABo/QEc5huJAAAA+klEQVQ4y2NgYGTiwgmYGBkYmFm48AAWVgY2LryAnYEDvwIOBi4CYBAq4Obh4cajgJePX0BQSJgXuwIRblExcQlJSQkpaVFuEQwF3DKycvIKkmCgKC+nJMONokBEWUVVTV0SDtQ1NLWURRAKRLR1dCXRgISevgjCBANDI2NUeUUTUzNkK3jNLSytENJW1ja2vCKovuBVtrOHyTs48jg5c2N408UVpsDNndfDE1OBl7ekj6+fv6+PZEAgb1AwL4aCkFDNsPCIyKjomNg47vgEDAVgt/KKgDCQmZgkgj82RWCBPQhTFBYFBDMOwazHiD/zcjIwcOIxg42TAQDycj2QqY26PgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNy0wM1QxNjoxOToxNiswMTowMKBTutYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDctMDNUMTY6MTk6MTYrMDE6MDDRDgJqAAAARnRFWHRzb2Z0d2FyZQBJbWFnZU1hZ2ljayA2LjcuOC05IDIwMTktMDItMDEgUTE2IGh0dHA6Ly93d3cuaW1hZ2VtYWdpY2sub3JnQXviyAAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpoZWlnaHQANTEywNBQUQAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA1MTIcfAPcAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE1NjIxNjcxNTYmb37zAAAAE3RFWHRUaHVtYjo6U2l6ZQAxMC45S0JC72WFMwAAAH90RVh0VGh1bWI6OlVSSQBmaWxlOi8vLi91cGxvYWRzLzU2L0w0UDBaOEEvMTk5Ni9jbGFzc21hdGVzX2NvbW11bmljYXRpb25fZWR1Y2F0aW9uX2xlYXJuaW5nX21lZGlhX25ldHdvcmtpbmdfc29jaWFsX2ljb25fMTIzMjY1LnBuZ1tsOmAAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+		<meta name="language" content="de" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=yes,maximum-scale=2">
+		<link rel='stylesheet' href='icons.min.css' type='text/css' media='screen' />
+		<link rel='stylesheet' href='style.min.css' type='text/css' media='screen' />
+	</head>
+	<body>
+		<div id="logo">
+			<i class="icon-logo"></i>
+		</div>
+		<h1 id="headline"></h1>
+		<div id="overview">
+		</div>
+		<div id="training" class="shadow">
+			<div id="content"></div><br/>
+			<br/>
+			<div id="buttons"></div>
+		</div>
+		<script src="courseIds.js" type="text/javascript"></script>
+		<script>
+			window.data = [];
+			window.supportedCourses.forEach(e => {
+				let script = document.createElement('script');
+				script.setAttribute('src','course/'+e);
+				document.body.appendChild(script);
+			});
+		</script> 
+		<script src="script.min.js" type="text/javascript"></script>
+	</body>
+</html>
